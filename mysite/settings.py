@@ -115,7 +115,10 @@ USE_TZ = True
 STATIC_URL = "/static/"
 
 # Following two lines are added later from Django girls guidebook
-STATIC_ROOT = BASE_DIR/'static'
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
+# STATIC_ROOT = BASE_DIR / 'static'
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'sunilbastola.pythonanywhere.com']
 
